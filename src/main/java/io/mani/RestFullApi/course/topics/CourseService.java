@@ -17,7 +17,8 @@ public class CourseService {
     public List<Course> getAllCourses(String topicId) {
         List<Course> courses = new ArrayList<>();
         //ignore this warning for know, it is ok
-        courseRepository.findByTopicId(topicId).forEach(courses::add);
+        courseRepository.findByTopicId(topicId).addAll(courses);
+        //forEach(courses::add);
         return courses;
     }
 
