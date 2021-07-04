@@ -24,7 +24,6 @@ public class CourseService {
 
     public Optional<Course> getCourse(String id) {
         return courseRepository.findById(id);
-
     }
 
     public void addCourse(Course course) {
@@ -33,13 +32,9 @@ public class CourseService {
 
     public void updateCourse(Course course) {
         courseRepository.save(course);
-
-
     }
 
     public void deleteCourse(String id) {
         courseRepository.deleteById(id);
-
-
     }
 }
