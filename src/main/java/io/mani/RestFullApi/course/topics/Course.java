@@ -1,4 +1,4 @@
-package io.mani.RestFullApi.course;
+package io.mani.RestFullApi.course.topics;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
